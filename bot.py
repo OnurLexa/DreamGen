@@ -2,7 +2,7 @@
 # Discord slash-command bot that uses "Stability AI" to generate images
 #  
 # Features:
-# - /picture slash command with optional params
+# - /resim slash command with optional params
 # - safety filter handling
 # - concurrency limter + per-user cooldown
 # - usage logging (sqlite)
@@ -276,4 +276,5 @@ async def on_ready():
     print(f"Bot hazır: {bot.user} (ID: {bot.user.id})")
 
 if __name__ == "__main__":
+
     bot.run(DISCORD_TOKEN)
